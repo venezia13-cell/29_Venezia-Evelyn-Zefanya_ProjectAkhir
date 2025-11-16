@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #000, #b30000, #ffce00);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+    min-height: 100vh;
+    padding: 40px 0;
+    color: #fff;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h2, h3 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #fffb00;
+    text-shadow: 0 0 8px rgba(255,206,0,0.5);
+}
+
+form {
+    width: 70%;
+    margin: 30px auto;
+    background: rgba(0,0,0,0.65);
+    padding: 25px 30px;
+    border-radius: 18px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+table td:first-child {
+    width: 30%;
+    font-weight: 600;
+    color: #ffa600;
+}
+
+table td:last-child {
+    width: 70%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 2px solid #ffce00;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #d00;
+    background: rgba(255,255,255,0.15);
+    box-shadow: 0 0 10px rgba(220,0,0,0.7);
+}
+
+input[type="submit"] {
+    background: linear-gradient(45deg, #000, #d00, #ffce00);
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-top: 15px;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 0 15px #ffce00;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    background: #ffce00;
+    padding: 10px 22px;
+    border-radius: 20px;
+    font-weight: 700;
+    margin: 20px auto;
+    text-align: center;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #fff;
+    color: #000;
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(255,255,255,0.7);
+}
+
+body > a {
+    display: block;
+    width: max-content;
+    margin: 25px auto;
+}

@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #000000, #d00000, #ffce00);
+    background-size: 300% 300%;
+    animation: bgMove 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+    width: 450px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+    animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.container h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.container h2 span {
+    color: #ffce00;
+    font-weight: bold;
+}
+
+.button-group {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.btn {
+    text-decoration: none;
+    display: block;
+    padding: 14px 0;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.btn.survey {
+    background: #ffce00;
+    color: #000;
+}
+
+.btn.survey:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px #ffce00;
+}
+
+.btn.logout {
+    background: #d00000;
+    color: white;
+}
+
+.btn.logout:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px #d00000;
+}
