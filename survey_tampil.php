@@ -25,7 +25,7 @@ $no = 1;
       <nav class="main-nav">
         <a href="landingpage.php" class="nav-link">Landing Page</a>
         <a href="about.php" class="nav-link">About Us</a>
-        <a href="login.php" class="btn-login">Login</a>
+        <a href="logout.php" class="btn-login">Logout</a>
       </nav>
     </div>
 </header>

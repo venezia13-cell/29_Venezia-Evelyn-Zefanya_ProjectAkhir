@@ -12,7 +12,6 @@ if (isset($_POST['submit'])) {
     $harapan = $_POST['harapan'];
     $rencana = $_POST['rencana'];
 
-    // Query sesuai tabel
     $query = "INSERT INTO survey_mahasiswa 
     (nama, email, tanggal, alasan_beasiswa, negara_tujuan, bidang_studi, harapan, rencana_setelah_lulus)
     VALUES 
@@ -46,7 +45,7 @@ if (isset($_POST['submit'])) {
             <nav class="main-nav">
                 <a href="landingpage.php" class="nav-link">Landing Page</a>
                 <a href="about.php" class="nav-link">About Us</a>
-                <a href="login.php" class="btn-login">Login</a>
+                <a href="logout.php" class="btn-login">Logout</a>
             </nav>
         </div>
     </header>
